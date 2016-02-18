@@ -1,0 +1,60 @@
+a {
+    color:white ;
+    text-decoration: none;
+}
+
+.grid-item {
+
+    color:white ;
+    background:blue ;
+    margin: 0.5em;
+    padding: 0.5em;
+    flex: 0 1 calc(25% - 2em);
+    border-radius: 1em;
+    text-align: center ;
+}
+
+.grid-item:hover{
+    background:black ;
+}
+
+.grid-content {
+
+    width:100%;
+    height:100%;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+.grid-content-wrap {
+
+    display:flex ;
+    flex-wrap:wrap;
+    justify-content: center;
+    width:80%;
+    margin: 0 auto ;
+    background: gray;
+
+}
+
+
+.grid-content span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+
+}
+
+#outer-wrap {
+
+}
+
+#main-content {
+    display:flex ;
+    flex-wrap:wrap;
+    justify-content: center;
+    width:80%;
+    margin: 0 auto ;
+    background: gray;
+}
