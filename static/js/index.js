@@ -26,12 +26,19 @@ var MasterGrid = function() {
 MasterGrid.prototype.init = function() {
 
 
-    this.mainDiv = document.getElementById('main-content') ;
+    this.buildColumn(document.getElementById('column1')) ;
+    this.buildColumn(document.getElementById('column2')) ;
+    this.buildColumn(document.getElementById('column3')) ;
+    this.buildColumn(document.getElementById('column4')) ;
+
+} ;
+
+MasterGrid.prototype.buildColumn = function(div) {
 
     for(var key in this.gridData) {
 
         var gridItem = this.buildDivElements(key);
-        this.mainDiv.appendChild(gridItem) ;
+        div.appendChild(gridItem) ;
         gridItem.addEventListener('click', this.buildSubMenu.bind(this));
     }
 
